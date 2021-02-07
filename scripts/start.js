@@ -7,8 +7,7 @@ try {
 } finally {
   var merchantAPI = require('../index.js');
   merchantAPI.start({
-    port: process.env.PORT || 3000,
-    bind: process.env.BIND || 'https://cornfieldblockchain.herokuapp.com'
+    
   });
   if (process.env.RPC) {
     merchantAPI.startRPC({
